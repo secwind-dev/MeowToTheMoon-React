@@ -1,0 +1,26 @@
+.main-layout {
+  --container: 980px;
+  width: 100vw;
+  background: var(--bg);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow: hidden;
+}
+/*------------------------------ipad mini---------------------------------*/
+@media screen and (max-width: 768px) {
+  .main-layout {
+    --container: 100vw;
+  }
+}
+/*-------------x----------------ipad mini-----------------x---------------*/
+/*------------------------------mobile---------------------------------*/
+@media screen and (max-width: 640px) {
+  .main-layout {
+    --container: 100vw;
+    /* background: hotpink; */
+  }
+}
+/*-------------x----------------mobile-----------------x---------------*/

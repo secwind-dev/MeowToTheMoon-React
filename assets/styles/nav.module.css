@@ -1,0 +1,102 @@
+section.nav-container {
+  position: sticky;
+  width: 100vw;
+  padding-top: 30px;
+  background: var(--bg);
+  top: 0px;
+  z-index: 10;
+}
+.nav-wrapper {
+  width: var(--container);
+  height: 64px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+.logo-col {
+  width: 185px;
+  height: 100%;
+  /* background: red; */
+  display: grid;
+  grid-template-columns: 56px 110px;
+  gap: 16px;
+}
+.logo-col .logo-moons {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  align-self: center;
+  overflow: hidden;
+}
+
+ul.menu-col {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 20px;
+  list-style: none;
+}
+ul.menu-col li {
+  padding: 0 15px;
+  color: #000 !important;
+}
+
+.social-wrapper {
+  display: flex;
+  margin-left: auto;
+  gap: 20px;
+}
+.social-wrapper .social-col {
+  width: 105px;
+  /* width: 158px; */
+  display: flex;
+  justify-content: space-between;
+  /* background: red; */
+  gap: 32px;
+  padding: 8px 0;
+}
+.social-wrapper .social-col img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.language-col {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  width: 66px;
+  align-items: flex-start;
+  margin-left: 24px;
+}
+.language-col .language {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #000;
+}
+/*------------------------------ipad mini---------------------------------*/
+@media screen and (max-width: 768px) {
+  .nav-wrapper {
+    height: 64px;
+    margin: 0 auto;
+    padding: 8px 16px;
+    display: flex;
+  }
+  .language-col,
+  .menu-col,
+  .social-wrapper {
+    display: none !important;
+  }
+}
+/*-------------x----------------ipad mini-----------------x---------------*/
+/*------------------------------mobile---------------------------------*/
+@media screen and (max-width: 640px) {
+  .nav-wrapper {
+    height: 64px;
+    margin: 0 auto;
+    padding: 0px 16px;
+    display: flex;
+  }
+}
+/*-------------x----------------mobile-----------------x---------------*/

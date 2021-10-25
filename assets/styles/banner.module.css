@@ -1,0 +1,85 @@
+/*------------------------------banners---------------------------------*/
+section.banner-wrapper {
+  width: var(--container);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+section.banner-wrapper .banner-text {
+  /* width: 50%; */
+  padding: 10px 34px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+section.banner-wrapper .banner-image {
+  margin-top: -50px;
+  /* background: chartreuse; */
+}
+
+/*-------------x----------------banners-----------------x---------------*/
+/*------------------------------ipad mini---------------------------------*/
+@media screen and (max-width: 768px) {
+  section.banner-wrapper {
+    width: 548px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    row-gap: 51px;
+    padding: 0 0px;
+  }
+  section.banner-wrapper .banner-text {
+    order: 2;
+    padding: 0 0;
+    gap: 20px;
+    width: 480px;
+    margin: 0 auto;
+    /* background: red; */
+  }
+  section.banner-wrapper .banner-text h2 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+  section.banner-wrapper .banner-image {
+    order: 1;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+/*-------------x----------------ipad mini-----------------x---------------*/
+/*------------------------------mobile---------------------------------*/
+@media screen and (max-width: 640px) {
+  section.banner-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    row-gap: 51px;
+    padding: 0px;
+  }
+  section.banner-wrapper .banner-text {
+    order: 2;
+    padding: 0 24px;
+    gap: 20px;
+    width: 100vw;
+  }
+  section.banner-wrapper .banner-text h2 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+  section.banner-wrapper .banner-image {
+    order: 1;
+    width: 288px;
+    margin: 0 auto;
+  }
+}
+/*-------------x----------------mobile-----------------x---------------*/

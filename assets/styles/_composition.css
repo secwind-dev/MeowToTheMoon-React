@@ -1,0 +1,86 @@
+/*------------------------------useDialog---------------------------------*/
+[useDialog] {
+  background: #fff;
+  border-radius: 8px;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+/*-------------x----------------useDialog-----------------x---------------*/
+/*------------------------------useBusy---------------------------------*/
+[useBusy] {
+  position: relative;
+  overflow: hidden;
+  pointer-events: none;
+  cursor: no-drop;
+}
+[useBusy]::before {
+  content: attr(busy_text);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  padding: 5px;
+  color: inherit;
+}
+[useBusy]::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  /* border: 2px dotted var(--busy_loading); */
+  border-top: 2px dotted var(--busy_loading);
+  border-bottom: 2px dotted var(--busy_loading);
+  /* border-left-color: transparent;
+  border-right-color: transparent; */
+  border-radius: 50%;
+  animation: loading-spinner 1.5s ease infinite;
+}
+
+@keyframes loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+/*-------------x----------------useBusy-----------------x---------------*/
+/*------------------------------useSkeleton---------------------------------*/
+#useSkelton {
+  --skeleton-hegiht: 15px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+#useSkelton .skeleton-wrapper {
+  width: 100%;
+  animation: loading-skeleton 1s linear infinite alternate;
+  height: var(--skeleton-hegiht);
+  opacity: 0.7;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes loading-skeleton {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+/*-------------x----------------useSkeleton-----------------x---------------*/

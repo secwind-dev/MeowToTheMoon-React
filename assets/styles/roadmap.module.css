@@ -1,0 +1,216 @@
+.timeline-item-title {
+  display: none;
+}
+section.roadMap-overview {
+  background: var(--secondary);
+  width: 100vw;
+  margin-bottom: 50px;
+}
+.roadMap-wrapper {
+  width: var(--container);
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 80px 0;
+  /* background: red; */
+}
+
+.timeline-wrapper {
+  width: 100%;
+  height: auto;
+  margin-top: 56px;
+}
+ul.timeline-body {
+  width: 100%;
+  list-style: none;
+  padding: 16px;
+}
+ul.timeline-body li.timeline-item {
+  width: 100%;
+  transform: translateX(10px);
+  padding: 0 81px;
+  border-left: 2px solid var(--primary);
+  position: relative;
+  height: auto;
+  padding-bottom: 48px;
+  margin-left: 32px;
+  /* background: #000; */
+}
+
+li.timeline-item .timeline-item-number {
+  position: absolute;
+  content: attr(ep-text);
+  width: 64px;
+  height: 64px;
+  left: -1px;
+  top: -1px;
+  background: var(--primary);
+  border-radius: 8px;
+  transform: translateX(-50%);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+ul.timeline-body li.active.timeline-item {
+  margin-top: 72px;
+}
+ul.timeline-body li.active.timeline-item:last-child {
+  padding-bottom: 0px;
+}
+
+ul.timeline-body li.active.timeline-item::before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  left: 0;
+  top: 0px;
+
+  border-radius: 50%;
+  z-index: 5;
+  transform: translate(-50%, -72px);
+  background: var(--primary);
+  border: 3px solid var(--secondary);
+  box-shadow: 0px 0px 0px 1px var(--primary);
+  -webkit-box-shadow: 0px 0px 0px 1px var(--primary);
+  -moz-box-shadow: 0px 0px 0px 1px var(--primary);
+}
+
+ul.timeline-body li.active .timeline-item-title {
+  display: block;
+  position: absolute;
+  top: -85px;
+  display: flex;
+  align-items: flex-end;
+  color: var(--primary);
+  font-weight: 700;
+  gap: 15px;
+}
+ul.timeline-body li.active.timeline-item::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  left: 0;
+  top: 0;
+  background: var(--primary);
+  height: 72px;
+  transform: translateY(-100%);
+}
+
+ul.timeline-body li.timeline-item:last-child {
+  border-left: none;
+}
+
+ul.timeline-body li.inActive.timeline-item {
+  border-left: 2px solid #fce9ea;
+}
+.roadMap-wrapper .timeline-wrapper p.desc {
+  color: #404552;
+}
+/*------------------------------ipad mini---------------------------------*/
+@media screen and (max-width: 768px) {
+  section.roadMap-overview {
+    background: var(--secondary);
+    width: 100vw;
+    padding: 0 32px;
+    margin-bottom: 50px;
+  }
+  .roadMap-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0;
+    /* background: red; */
+  }
+
+  .timeline-item-title h2 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    width: max-content;
+  }
+}
+
+ul.timeline-body li.active .timeline-item-title {
+  gap: 5px;
+}
+/*-------------x----------------ipad mini-----------------x---------------*/
+/*------------------------------mobile---------------------------------*/
+@media screen and (max-width: 640px) {
+  section.roadMap-overview {
+    background: var(--secondary);
+    width: 100vw;
+    margin-bottom: 50px;
+    padding-top: 58px;
+  }
+  .roadMap-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+  }
+  .roadMap-wrapper h2 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  .timeline-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    padding-bottom: 60px;
+  }
+
+  .timeline-wrapper .roadMap-sm {
+    width: 100%;
+    margin: 30px auto;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 20px;
+  }
+
+  .roadMap-sm.active .roadMap-session {
+    display: grid;
+    width: 288px;
+    grid-auto-flow: row;
+    row-gap: 1px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .roadMap-sm.active:last-child {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .roadMap-session {
+    display: none;
+  }
+
+  .roadMap-sm-title {
+    display: flex;
+    align-items: center;
+  }
+  .roadMap-sm-title .timeline-item-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 8px;
+    width: 72px;
+    height: 72px;
+    margin-right: 16px;
+  }
+  .roadMap-sm-title-text {
+    font-size: 24px;
+    width: 200px;
+    font-weight: 700;
+    text-align: left;
+  }
+}
+/*-------------x----------------mobile-----------------x---------------*/
