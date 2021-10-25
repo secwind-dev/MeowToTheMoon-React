@@ -5,7 +5,7 @@ section.banner-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 42px;
 }
 section.banner-wrapper .banner-text {
   /* width: 50%; */
@@ -29,7 +29,7 @@ section.banner-wrapper .banner-image {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 42px;
     row-gap: 51px;
     padding: 0 0px;
   }
@@ -61,7 +61,7 @@ section.banner-wrapper .banner-image {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 36px;
     row-gap: 51px;
     padding: 0px;
   }

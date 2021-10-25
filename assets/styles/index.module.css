@@ -11,26 +11,11 @@ section.coming-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 840px;
+  width: 585px;
   margin: 0 auto;
   margin-bottom: 100px;
 }
-section.coming-wrapper::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 50%;
-  width: 100%;
-  height: 1.2px;
-  background: #aeb6c5;
-}
 
-section.coming-wrapper h2 {
-  position: relative;
-  background: var(--bg);
-  padding: 0 30px;
-  z-index: 2;
-}
 /*-------------x----------------comings-----------------x---------------*/
 /*------------------------------products---------------------------------*/
 section.product-wrapper {
@@ -53,32 +38,6 @@ section.who-wrapper {
 
 /*------------------------------ipad mini---------------------------------*/
 @media screen and (max-width: 768px) {
-  /*------------------------------comings---------------------------------*/
-  section.coming-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 704px;
-    margin: 0 auto;
-    margin-bottom: 100px;
-  }
-  section.coming-wrapper::after {
-    position: absolute;
-    content: "";
-    left: 0px;
-    top: 50%;
-    width: 100%;
-    height: 1.2px;
-    background: #aeb6c5;
-  }
-
-  section.coming-wrapper h2 {
-    font-size: 36px;
-    line-height: 40px;
-    font-weight: 700;
-  }
-  /*-------------x----------------comings-----------------x---------------*/
   /*------------------------------products---------------------------------*/
   section.product-wrapper {
     width: 100vw;
@@ -110,25 +69,11 @@ section.who-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 95vw;
     margin: 0 auto;
-    margin-bottom: 100px;
-  }
-  section.coming-wrapper::after {
-    position: absolute;
-    content: "";
-    left: 16px;
-    top: 50%;
-    width: calc(100vw - 32px);
-    height: 1.2px;
-    background: #aeb6c5;
+    margin-bottom: 36px;
   }
 
-  section.coming-wrapper h2 {
-    font-size: 36px;
-    line-height: 40px;
-    font-weight: 700;
-  }
   /*-------------x----------------comings-----------------x---------------*/
   /*------------------------------products---------------------------------*/
   section.product-wrapper {

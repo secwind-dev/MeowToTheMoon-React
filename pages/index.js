@@ -12,8 +12,12 @@ export default function index() {
   function ComingSoon() {
     return (
       <section className={style[`coming-wrapper`]}>
-        <h2 className="text--5xl">Coming soon</h2>
+        <img src="/app/duedate.png" alt="duedate" />
+        {/* <img src="/app/duedate.png" alt="duedate" style={{ width: "585px" }} /> */}
       </section>
+      //   <section className={style[`coming-wrapper`]}>
+      //     <h2 className="text--5xl">Coming soon</h2>
+      //   </section>
     );
   }
   function ProductImage() {

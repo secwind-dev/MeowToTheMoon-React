@@ -1,13 +1,13 @@
 // .gitnignore
 # next.js build output
-# .next
+.next
 
 # dotenv environment variables file (build for Zeit Now)
 .env
 .env.build
 
 # Dependency directories
-# node_modules/
+node_modules/
 
 # folder สำหรับ test code
 pages/_test/
